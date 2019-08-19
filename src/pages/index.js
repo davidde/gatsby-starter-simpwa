@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import { faBars, faHome } from '@fortawesome/free-solid-svg-icons'
+import { faCog, faComments } from '@fortawesome/free-solid-svg-icons'
 import { Layout, MainView, Leftside, Rightside } from 'gatsby-theme-simpwa'
 
 import SEO from '../components/seo'
@@ -9,7 +9,12 @@ import SEO from '../components/seo'
 export default ({ data }) => (
   <Layout>
     <SEO title="Home" />
-    <Leftside header='Contents' icon={faBars} >
+    <Leftside header='Settings' icon={faCog} >
+      <br/>
+      <p>
+        [Implement Settings here ...]
+      </p><br/><br/>
+
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius semper ligula, eu luctus nunc mollis in. Vestibulum vulputate metus metus, id rutrum magna imperdiet nec. Aenean at pharetra risus. Integer convallis ac enim id aliquet. Mauris pharetra mollis nulla, eget posuere mi accumsan eu. Curabitur urna nisl, varius rhoncus tristique et, egestas et augue. Vivamus ac libero faucibus, vehicula quam in, posuere felis. Aliquam erat volutpat. Maecenas pretium iaculis dui sed elementum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.
       </p><br/>
@@ -29,26 +34,6 @@ export default ({ data }) => (
       <p>
         Sed nulla erat, lacinia sit amet dui at, cursus blandit neque. In ultricies, dui a laoreet dignissim, risus mi cursus risus, at luctus sem arcu non tortor. In hac habitasse platea dictumst. Etiam ut vulputate augue. Aenean efficitur commodo ipsum, in aliquet arcu blandit non. Praesent sed tempus dui, non eleifend nisi. Proin non finibus diam, quis finibus ante. Fusce aliquam faucibus mauris, id consequat velit ultricies at. Aliquam neque erat, fermentum non aliquam id, mattis nec justo. Nullam eget suscipit lectus.
       </p><br/>
-
-      <p>
-        Mauris velit turpis, scelerisque at velit sed, porta varius tellus. Donec mollis faucibus arcu id luctus. Etiam sit amet sem orci. Integer accumsan enim id sem aliquam sollicitudin. Etiam sit amet lorem risus. Aliquam pellentesque vestibulum hendrerit. Pellentesque dui mauris, volutpat vel sapien vitae, iaculis venenatis odio. Donec vel metus et purus ullamcorper consequat. Mauris at ullamcorper quam, sed vehicula felis. Vestibulum fringilla, lacus sit amet finibus imperdiet, tellus massa pretium urna, non lacinia dui nibh ut enim. Nullam vestibulum bibendum purus convallis vehicula. Morbi tempor a ipsum mattis pellentesque. Nulla non libero vel enim accumsan luctus.
-      </p><br/>
-
-      <p>
-        Nam accumsan eleifend metus at imperdiet. Mauris pellentesque ipsum nisi, et fringilla leo blandit sed. In tempor, leo sit amet fringilla imperdiet, ipsum enim sagittis sem, non molestie nisi purus consequat sapien. Proin at velit id elit tincidunt iaculis ac ac libero. Vivamus vitae tincidunt ex. Duis sit amet lacinia massa. Quisque lobortis tincidunt metus ut commodo. Sed euismod quam gravida condimentum commodo.
-      </p><br/>
-
-      <p>
-        Suspendisse vulputate eros ut aliquet molestie. Integer ultricies sit amet nisi nec suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent id eleifend leo, in rutrum magna. Phasellus felis orci, imperdiet eget felis vitae, interdum scelerisque justo. Nullam orci orci, hendrerit a lacus vel, finibus blandit est. Nunc faucibus tortor ac enim condimentum, ac fringilla magna dignissim.
-      </p><br/>
-
-      <p>
-        In sagittis tortor sit amet turpis placerat sagittis. Donec vitae urna id libero tincidunt hendrerit nec eget lectus. Curabitur magna quam, viverra id elit in, finibus elementum metus. Morbi venenatis dolor iaculis massa ornare scelerisque. Etiam volutpat nisi vel erat ornare, et blandit erat ultrices. Aliquam arcu arcu, sagittis semper elit et, tincidunt condimentum orci. Aliquam vestibulum enim id mauris ullamcorper, non volutpat tortor viverra. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras consectetur mauris et fermentum sollicitudin. Maecenas tempor vulputate eleifend. Suspendisse elementum dui ut elit congue pharetra. Cras sagittis eget lacus nec bibendum. In interdum leo nibh, a vestibulum est blandit eu. Cras scelerisque et arcu vitae vulputate.
-      </p><br/>
-
-      <p>
-        Praesent ligula arcu, scelerisque non placerat ullamcorper, pharetra sed tortor. Curabitur vel sagittis leo, non imperdiet lorem. Quisque hendrerit rutrum sem, vitae dictum ipsum mattis non. Etiam in nibh egestas, ullamcorper nisl nec, interdum ex. Proin et orci luctus, venenatis odio ut, dapibus quam. Integer aliquet aliquet consequat. Donec rutrum dui orci, at facilisis lectus fermentum a. Proin eleifend ornare odio luctus rhoncus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed a erat sit amet tellus gravida ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu arcu metus. Sed efficitur nulla diam, a mattis magna fringilla a. In vitae ante risus. Maecenas vel elit blandit, pharetra eros in, egestas eros. Nullam efficitur auctor quam, vitae pretium ante dapibus ut.
-      </p>
     </Leftside>
 
     <MainView header={data.site.siteMetadata.title} >
@@ -93,7 +78,12 @@ export default ({ data }) => (
       </p>
     </MainView>
 
-    <Rightside header='Home' icon={faHome} >
+    <Rightside header='Chat' icon={faComments} >
+      <br/>
+      <p>
+        [Implement chatbot here ...]
+      </p><br/><br/>
+
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius semper ligula, eu luctus nunc mollis in. Vestibulum vulputate metus metus, id rutrum magna imperdiet nec. Aenean at pharetra risus. Integer convallis ac enim id aliquet. Mauris pharetra mollis nulla, eget posuere mi accumsan eu. Curabitur urna nisl, varius rhoncus tristique et, egestas et augue. Vivamus ac libero faucibus, vehicula quam in, posuere felis. Aliquam erat volutpat. Maecenas pretium iaculis dui sed elementum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.
       </p><br/>
@@ -113,26 +103,6 @@ export default ({ data }) => (
       <p>
         Sed nulla erat, lacinia sit amet dui at, cursus blandit neque. In ultricies, dui a laoreet dignissim, risus mi cursus risus, at luctus sem arcu non tortor. In hac habitasse platea dictumst. Etiam ut vulputate augue. Aenean efficitur commodo ipsum, in aliquet arcu blandit non. Praesent sed tempus dui, non eleifend nisi. Proin non finibus diam, quis finibus ante. Fusce aliquam faucibus mauris, id consequat velit ultricies at. Aliquam neque erat, fermentum non aliquam id, mattis nec justo. Nullam eget suscipit lectus.
       </p><br/>
-
-      <p>
-        Mauris velit turpis, scelerisque at velit sed, porta varius tellus. Donec mollis faucibus arcu id luctus. Etiam sit amet sem orci. Integer accumsan enim id sem aliquam sollicitudin. Etiam sit amet lorem risus. Aliquam pellentesque vestibulum hendrerit. Pellentesque dui mauris, volutpat vel sapien vitae, iaculis venenatis odio. Donec vel metus et purus ullamcorper consequat. Mauris at ullamcorper quam, sed vehicula felis. Vestibulum fringilla, lacus sit amet finibus imperdiet, tellus massa pretium urna, non lacinia dui nibh ut enim. Nullam vestibulum bibendum purus convallis vehicula. Morbi tempor a ipsum mattis pellentesque. Nulla non libero vel enim accumsan luctus.
-      </p><br/>
-
-      <p>
-        Nam accumsan eleifend metus at imperdiet. Mauris pellentesque ipsum nisi, et fringilla leo blandit sed. In tempor, leo sit amet fringilla imperdiet, ipsum enim sagittis sem, non molestie nisi purus consequat sapien. Proin at velit id elit tincidunt iaculis ac ac libero. Vivamus vitae tincidunt ex. Duis sit amet lacinia massa. Quisque lobortis tincidunt metus ut commodo. Sed euismod quam gravida condimentum commodo.
-      </p><br/>
-
-      <p>
-        Suspendisse vulputate eros ut aliquet molestie. Integer ultricies sit amet nisi nec suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent id eleifend leo, in rutrum magna. Phasellus felis orci, imperdiet eget felis vitae, interdum scelerisque justo. Nullam orci orci, hendrerit a lacus vel, finibus blandit est. Nunc faucibus tortor ac enim condimentum, ac fringilla magna dignissim.
-      </p><br/>
-
-      <p>
-        In sagittis tortor sit amet turpis placerat sagittis. Donec vitae urna id libero tincidunt hendrerit nec eget lectus. Curabitur magna quam, viverra id elit in, finibus elementum metus. Morbi venenatis dolor iaculis massa ornare scelerisque. Etiam volutpat nisi vel erat ornare, et blandit erat ultrices. Aliquam arcu arcu, sagittis semper elit et, tincidunt condimentum orci. Aliquam vestibulum enim id mauris ullamcorper, non volutpat tortor viverra. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras consectetur mauris et fermentum sollicitudin. Maecenas tempor vulputate eleifend. Suspendisse elementum dui ut elit congue pharetra. Cras sagittis eget lacus nec bibendum. In interdum leo nibh, a vestibulum est blandit eu. Cras scelerisque et arcu vitae vulputate.
-      </p><br/>
-
-      <p>
-        Praesent ligula arcu, scelerisque non placerat ullamcorper, pharetra sed tortor. Curabitur vel sagittis leo, non imperdiet lorem. Quisque hendrerit rutrum sem, vitae dictum ipsum mattis non. Etiam in nibh egestas, ullamcorper nisl nec, interdum ex. Proin et orci luctus, venenatis odio ut, dapibus quam. Integer aliquet aliquet consequat. Donec rutrum dui orci, at facilisis lectus fermentum a. Proin eleifend ornare odio luctus rhoncus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed a erat sit amet tellus gravida ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu arcu metus. Sed efficitur nulla diam, a mattis magna fringilla a. In vitae ante risus. Maecenas vel elit blandit, pharetra eros in, egestas eros. Nullam efficitur auctor quam, vitae pretium ante dapibus ut.
-      </p>
     </Rightside>
   </Layout>
 )
