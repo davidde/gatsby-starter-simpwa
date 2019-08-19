@@ -1,9 +1,8 @@
 {
-  "name": "gatsby-starter-default",
-  "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "name": "gatsby-starter-simpwa",
+  "description": "Configurable starter layout for a simple PWA with sidebars",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "David Deprost",
   "dependencies": {
     "gatsby": "^2.13.67",
     "gatsby-image": "^2.2.8",
@@ -22,7 +21,11 @@
     "prettier": "^1.18.2"
   },
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "gatsby-starter",
+    "PWA",
+    "sidebar",
+    "react"
   ],
   "license": "MIT",
   "scripts": {
@@ -35,9 +38,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": ""
   }
 }
