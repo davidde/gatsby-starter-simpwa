@@ -28,5 +28,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
+    `gatsby-theme-simpwa`,
   ],
 }
