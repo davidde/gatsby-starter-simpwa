@@ -1,6 +1,6 @@
 {
   "name": "gatsby-starter-simpwa",
-  "description": "Configurable starter layout for a simple PWA with sidebars",
+  "description": "Configurable starter that implements the basics for a simple PWA with sidebars",
   "version": "0.1.0",
   "author": "David Deprost",
   "dependencies": {
@@ -39,6 +39,6 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/DavidDeprost/gatsby-starter-simpwa"
   }
 }

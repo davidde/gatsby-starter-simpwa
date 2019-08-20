@@ -1,59 +1,34 @@
 # Gatsby starter for simple PWA's
-This starter implements `gatsby-theme-simpwa` to provide a generic, re-usable and
-modular layout for developing simple PWA's (Progressive Web Applications) with
-responsive sidebars on the left and right.
+This starter implements [gatsby-theme-simpwa](https://github.com/DavidDeprost/gatsby-theme-simpwa)
+to provide a generic, re-usable and modular layout for developing simple PWA's
+(Progressive Web Applications) with responsive sidebars on the left and right.
 
 The intended use case is for **simple web apps** aiming to present themselves as close
 as possible to native mobile apps. The idea here is that a simple app can stuff all
 its content in the main screen and its left/right sidebars.
 
 ## Installation
-```
+```bash
 gatsby new my-awesome-app https://github.com/DavidDeprost/gatsby-starter-simpwa
 ```
-
-## Usage
-The theme provides 4 simple components to build your app; a parent `<Layout>` component,
-and its 3 children, `<MainView>`, `<Leftside>` and `<Rightside>`.
-
-### \<Layout> component
-The parent component that enables its 3 children components to work properly.
-
-Props:
-- **theme**: The theme to use for your app. Defaults to 'default-theme'.
-
-### \<MainView> component
-The main content of your app. Should be a direct descendant of `<Layout>`.
-
-Props:
-- **header**: The header of your app.
-
-### \<Leftside> component
-The **left sidebar** of your app. Should be a direct descendant of `<Layout>`.  
-Can be omitted if you don't want a left sidebar.
-
-Props:
-- **header**: The header of the left sidebar.
-- **icon**: Font Awesome icon from `@fortawesome/free-solid-svg-icons`
-  that triggers the left sidebar.
-
-### \<Rightside> component
-The **right sidebar** of your app. Should be a direct descendant of `<Layout>`.  
-Can be omitted if you don't want a right sidebar.
-
-Props:
-- **header**: The header of the right sidebar.
-- **icon**: Font Awesome icon from `@fortawesome/free-solid-svg-icons`
-  that triggers the right sidebar.
-
 
 ## Customization
 Customization is fairly simple due to a modular approach to styling/theming.
 
 > Even the theme 's got themes!
 
-Each (sub)theme consists of 3 .scss partials: a **colors**, **specs**, and **styles** file,
+Each theme consists of 3 .scss partials: a **colors**, **specs**, and **styles** file,
 which define *color variables*, *spec variables* (like sizes and media queries), and
-the *general styles* of the theme respectively.  
-You can shadow any of these files for a quick change, or create your personal
-theme by putting together 3 modified partials.
+the *general styles* of the theme respectively:
+```
+src/gatsby-theme-simpwa/styles
+├── _default_colors.scss
+├── _default_specs.scss
+├── _default_styles.scss
+└── default_theme.scss
+```
+Do you want different colors? Simply modify `src/gatsby-theme-simpwa/styles/_default_colors.scss`.  
+Want smaller/larger sidebars? Modify `src/gatsby-theme-simpwa/styles/_default_specs.scss`.
+
+Check out the [theme's README](https://github.com/DavidDeprost/gatsby-theme-simpwa)
+for more.
