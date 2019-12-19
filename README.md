@@ -12,23 +12,5 @@ its content in the main screen and its left/right sidebars.
 gatsby new my-awesome-app https://github.com/davidde/gatsby-starter-simpwa
 ```
 
-## Customization
-Customization is fairly simple due to a modular approach to styling/theming.
-
-> Even the theme 's got themes!
-
-Each theme consists of 3 .scss partials: a **colors**, **specs**, and **styles** file,
-which define *color variables*, *spec variables* (like sizes and media queries), and
-the *general styles* of the theme respectively:
-```
-src/gatsby-theme-simpwa/styles
-├── _default_colors.scss
-├── _default_specs.scss
-├── _default_styles.scss
-└── default_theme.scss
-```
-Do you want different colors? Simply modify `src/gatsby-theme-simpwa/styles/_default_colors.scss`.  
-Want smaller/larger sidebars? Modify `src/gatsby-theme-simpwa/styles/_default_specs.scss`.
-
 Check out the [theme's README](https://github.com/davidde/gatsby-theme-simpwa)
-for more.
+for more information.
