@@ -1,14 +1,12 @@
-import React from 'react'
-import { graphql } from 'gatsby'
-import { faCog, faComments } from '@fortawesome/free-solid-svg-icons'
-import { Layout, MainView, Leftside, Rightside } from 'gatsby-theme-simpwa'
-
-import SEO from '../components/seo'
+import React from 'react';
+import { graphql } from 'gatsby';
+import { faCog, faComments } from '@fortawesome/free-solid-svg-icons';
+import { Layout, MainView, Leftside, Rightside, SEO } from 'gatsby-theme-simpwa';
 
 
 export default ({ data }) => (
   <Layout>
-    <SEO title="Home" />
+    <SEO />
     <Leftside header='Settings' icon={faCog} >
       <br/>
       <p>

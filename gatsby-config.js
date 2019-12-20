@@ -1,33 +1,23 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter simPWA`,
-    description: `Configurable starter that implements the basics for a simple PWA with sidebars`,
-    author: `David Deprost`,
+    title: 'Gatsby Starter simPWA',
+    description: 'Configurable starter that implements the basics for a simple PWA with sidebars',
+    author: 'David Deprost',
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-plugin-manifest',
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
+        name: 'gatsby-starter-simpwa',
+        short_name: 'simpwa',
+        start_url: '/',
+        background_color: '#663399',
+        theme_color: '#663399',
+        display: 'standalone',
+        icon: 'src/images/icon.png', // This path is relative to the root of the site.
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `gatsby-starter-simpwa`,
-        short_name: `simpwa`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `standalone`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
-      },
-    },
-    `gatsby-plugin-offline`,
-    `gatsby-theme-simpwa`,
+    'gatsby-plugin-offline',
+    'gatsby-theme-simpwa',
   ],
 }
