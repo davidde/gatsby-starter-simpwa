@@ -5,6 +5,7 @@ module.exports = {
     author: 'David Deprost',
   },
   plugins: [
+    'gatsby-theme-simpwa',
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
@@ -17,7 +18,5 @@ module.exports = {
         icon: 'src/images/icon.png', // This path is relative to the root of the site.
       },
     },
-    'gatsby-plugin-offline',
-    'gatsby-theme-simpwa',
   ],
 }
