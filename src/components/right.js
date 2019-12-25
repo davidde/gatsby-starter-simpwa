@@ -1,15 +1,18 @@
 import React from 'react';
-import { faComments } from '@fortawesome/free-solid-svg-icons';
-import { Rightside } from 'gatsby-theme-simpwa';
+import { faCog } from '@fortawesome/free-solid-svg-icons';
+import { Rightside, ThemeSwitcher, SidestripSwitcher } from 'gatsby-theme-simpwa';
 
 
 function Right() {
   return (
-    <Rightside header='Chat' icon={faComments} >
+    <Rightside header='Settings' icon={faCog} >
         <br/>
         <p>
-          [Implement chatbot here ...]
-        </p>
+          These settings use the html native components:
+        </p><br/>
+        <button>Button</button><br/>
+        <ThemeSwitcher select='native' />
+        <SidestripSwitcher select='native' />
     </Rightside>
   );
 }
