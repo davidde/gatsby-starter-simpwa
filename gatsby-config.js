@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: '/gatsby-starter-simpwa', // This is used for deploying to Github Pages
   siteMetadata: {
     title: 'Gatsby Starter simPWA',
     description: 'Configurable starter that implements the basics for a simple PWA with sidebars',
