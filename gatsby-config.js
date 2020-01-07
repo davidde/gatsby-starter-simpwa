@@ -11,7 +11,7 @@ module.exports = {
       options: {
         name: 'gatsby-starter-simpwa',
         short_name: 'simPWA',
-        start_url: '/',
+        start_url: '/gatsby-starter-simpwa/',
         background_color: '#663399',
         theme_color: '#663399',
         display: 'standalone',
