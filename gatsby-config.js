@@ -6,12 +6,11 @@ module.exports = {
     author: 'David Deprost',
   },
   plugins: [
-    'gatsby-theme-simpwa',
     {
-      resolve: 'gatsby-plugin-manifest',
+      resolve: 'gatsby-theme-simpwa',
       options: {
         name: 'gatsby-starter-simpwa',
-        short_name: 'simpwa',
+        short_name: 'simPWA',
         start_url: '/',
         background_color: '#663399',
         theme_color: '#663399',
